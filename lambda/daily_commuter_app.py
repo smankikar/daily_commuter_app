@@ -448,8 +448,8 @@ def commonfactor(scode, dcode):
     speech_output_1 = "From " + str(iti.sstationName) + " station, take one of the following trains. "
     print ("TARGET --> ", iti.target)
     target = iti.target
-    #if (str(target) == "Millbrae"):
-    #    target = string.replace(target, "Millbrae", "SFO/Millbrae")
+    if (str(target) == "Millbrae"):
+        target = string.replace(target, "Millbrae", "SFO/Millbrae")
     if (str(iti.target).startswith("Warm Springs")):
         target = string.replace(iti.target, iti.target, "Warm Springs")
 
